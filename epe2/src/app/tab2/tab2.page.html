@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+       <ion-button (click)="menu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Imagenes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <ion-card color="success" (click)="arte()">
+              <ion-img src="https://concepto.de/wp-content/uploads/2015/04/arte-e1504807284281-1.jpeg"></ion-img>
+              <ion-card-content>
+                Arte
+              </ion-card-content>
+            </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card color="success" (click)="arqui()">
+            <ion-img src="https://i.pinimg.com/originals/d7/b8/56/d7b856cfb30e727bb43ef6523272950c.jpg"></ion-img>
+            <ion-card-content>
+                Arquitectura 
+            </ion-card-content>
+          </ion-card>
+    </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-card color="success" (click)="anime()">
+                <ion-img src="https://i.pinimg.com/originals/ab/bf/d4/abbfd483b69244e9747e83b4e5c35bcd.jpg"></ion-img>
+                <ion-card-content>
+                    Anime 
+                </ion-card-content>
+              </ion-card>
+        </ion-col>
+      <ion-col>
+        <ion-card color="success" (click)="deport()">
+            <ion-img src="http://www.medicien.cl/wp-content/uploads/2019/01/foto-blog.png"></ion-img>
+            <ion-card-content>
+                Deporte 
+            </ion-card-content>
+          </ion-card>
+    </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-card color="success" (click)="meme()">
+                <ion-img src="http://holatelcel.com/wp-content/uploads/2017/03/meme-gato-3.jpg"></ion-img>
+                <ion-card-content>
+                    Memes
+                </ion-card-content>
+              </ion-card>
+        </ion-col>
+        <ion-col>
+            <ion-card color="success" (click)="music()">
+                <ion-img src="https://2.bp.blogspot.com/-AKKnqANDWec/U-1A80ojwdI/AAAAAAAAXUo/d54ie8acTl0/s1600/importancia-de-la-musica.jpg"></ion-img>
+                <ion-card-content>
+                    Musica
+                </ion-card-content>
+              </ion-card>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>

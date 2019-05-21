@@ -1,0 +1,68 @@
+<ion-app>
+  <ion-menu side="start" menuId="first" contentId="principal" mode="ios"> 
+    <ion-header>
+      <ion-toolbar color="success">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      
+      <ion-label color="light">
+        Categorias
+      </ion-label>
+      <ion-list mode="ios">
+          <ion-menu-toggle>
+        <ion-item (click)="art()">
+          <ion-label color="light">
+            Arte
+          </ion-label>
+        </ion-item>
+        <ion-item (click)="arqui()">
+          <ion-label color="light">
+            Arquitectura
+          </ion-label>
+        </ion-item>
+        <ion-item (click)="anime()">
+          <ion-label color="light">
+            Anime y Manga
+          </ion-label>
+        </ion-item>
+        <ion-item (click)="deport()">
+          <ion-label color="light">
+            Deporte y bienestar
+          </ion-label>
+        </ion-item>
+        <ion-item (click)="meme()">
+          <ion-label color="light">
+            Memes
+          </ion-label>
+        </ion-item>
+        <ion-item (click)="music()">
+          <ion-label color="light">
+            Musica
+          </ion-label>
+        </ion-item>
+        
+         </ion-menu-toggle>   
+      </ion-list>
+      <ion-label color="light">
+          Aportes
+        </ion-label>
+        <ion-list mode="ios">
+        <ion-menu-toggle> 
+            <ion-item (click)="Help()">
+                <ion-label color="light">
+                  Ayuda
+                </ion-label>
+              </ion-item>
+              
+        <ion-item>
+            <ion-button color="success" (click)="votar()">califica nuestro trabajo</ion-button>
+          </ion-item>
+        </ion-menu-toggle> 
+        </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="principal"></ion-router-outlet>
+</ion-app>
