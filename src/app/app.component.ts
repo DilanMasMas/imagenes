@@ -55,4 +55,8 @@ export class AppComponent {
     this.navcrl.navigateForward("calificaciones");
   }
 
+  help(){
+    this.navcrl.navigateForward("help")
+  }
+
 }
