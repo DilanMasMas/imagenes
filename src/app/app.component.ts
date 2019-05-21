@@ -55,7 +55,7 @@ export class AppComponent {
     this.navcrl.navigateForward("calificaciones");
   }
 
-  help(){
+  ayuda(){
     this.navcrl.navigateForward("help")
   }
 
